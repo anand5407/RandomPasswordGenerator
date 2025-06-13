@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('D:/web devlopement/RendomPasswordProject/util/6534510.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Main Container */
+#mainbox {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Glass-style Password Box */
+#passwordbox {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient Text Header */
+#passwordbox h1 {
+    font-size: 28px;
+    text-align: center;
+    background: linear-gradient(90deg, #00ffd5, #00b3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Password Output Box */
+#password {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #00ffcc;
+}
+
+/* Subheading and Input */
+h3 {
+    font-size: 18px;
+    color: #ffffffcc;
+    margin-top: 10px;
+}
+
+/* Input Box */
+#length {
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Button */
+#generate {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #00ffcc;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate:hover {
+    background-color: #00ddb1;
+}
+
+/* Responsive */
+@media screen and (max-width: 650px) {
+    #passwordbox {
+        padding: 20px;
+    }
+
+    #password {
+        height: 120px;
+    }
+
+    #generate {
+        width: 100%;
+    }
+}
